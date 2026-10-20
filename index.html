@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trái tim dành cho cậu ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at center,#21102f,#080711 70%);overflow:hidden;color:white;font-family:Arial,sans-serif}
+canvas{display:block;width:100vw;height:100vh}
+.msg{position:fixed;bottom:12%;width:100%;text-align:center;color:#ffd5ed;text-shadow:0 0 12px #ff5bbd;font-size:18px;padding:0 16px}
+.hint{position:fixed;bottom:5%;width:100%;text-align:center;color:#cbb5d8;font-size:12px}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div class="msg">Chạm vào trái tim nhé ❤️</div>
+<div class="hint">Gửi tặng người đặc biệt 💗</div>
+<script>
+const c=document.getElementById('c'),x=c.getContext('2d');
+let w,h,dots=[],tick=0;
+function resize(){w=c.width=innerWidth;h=c.height=innerHeight;dots=[];let scale=Math.min(w,h)*.018;for(let i=0;i<1800;i++){let t=Math.random()*Math
